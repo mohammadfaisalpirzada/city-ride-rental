@@ -9,7 +9,7 @@ const NavBar = () => {
       {/* Top Section: Logo and Profile Picture */}
       <div className="flex items-center justify-between w-full md:w-auto mb-4 md:mb-0">
         {/* Logo */}
-        <div className="font-bold text-blue-600 text-[24px] md:text-[32px]">
+        <div className="font-bold text-blue-600 text-[24px] md:text-[32px] px-10">
           MORENT
         </div>
 
