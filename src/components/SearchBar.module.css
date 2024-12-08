@@ -1,54 +1,58 @@
+/* Wrapper ensures alignment and spacing */
 .wrapper {
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
-    width: 100%; /* Full width container */
+    justify-content: flex-start; /* Align to the left */
+    margin-left: 0; /* Default left margin */
+    width: 100%; /* Full width */
 }
 
-/* Search bar styling */
+/* Search Bar Container */
 .inputContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%; /* Full width by default */
-    max-width: 492px; /* Maximum width is 492px */
-    height: 44px; /* Set height */
-    border: 1px solid #ccc; /* Border around the search bar */
+    max-width: 492px; /* Fixed width */
+    width: 100%;
+    height: 44px; /* Fixed height */
+    border: 1px solid #ccc; /* Border around the input */
     border-radius: 8px; /* Rounded corners */
-    padding: 0 12px; /* Horizontal padding */
-    background-color: #f9f9f9; /* Background color */
+    padding: 0 12px; /* Internal spacing */
+    background-color: #f9f9f9; /* Light background */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin-left: 0; /* Default for mobile screens */
 }
 
-/* Icons styling */
+/* Icon Containers */
 .icon, .settingsIcon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 24px; /* Icon container size */
+    width: 24px; /* Icon size container */
     height: 24px;
 }
 
-/* Input field styling */
+/* Input Field */
 .input {
-    flex-grow: 1; /* Input field grows to take available space */
+    flex-grow: 1; /* Take up the remaining space */
     border: none; /* Remove border */
     outline: none; /* Remove focus outline */
-    padding: 0 8px; /* Inner padding */
-    font-size: 14px; /* Font size */
+    padding: 0 8px; /* Add padding */
+    font-size: 14px; /* Text size */
     background-color: transparent; /* Transparent background */
     color: #333; /* Text color */
 }
 
-/* Desktop-specific styling */
+/* Desktop-Specific Spacing */
 @media (min-width: 1024px) {
     .wrapper {
-        margin-left: 272px; /* Add 272px left space on desktop screens */
+        margin-left: 272px; /* Position 272px from the left on desktop screens */
     }
 }
 
-/* Responsive adjustments */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
+    .wrapper {
+        margin-left: 0; /* Reset left margin for smaller screens */
+    }
     .inputContainer {
         max-width: 100%; /* Full width on smaller screens */
     }
