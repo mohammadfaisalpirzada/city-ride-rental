@@ -1,0 +1,55 @@
+.wrapper {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    width: 100%; /* Full width container */
+}
+
+/* Search bar styling */
+.inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Full width by default */
+    max-width: 492px; /* Maximum width is 492px */
+    height: 44px; /* Set height */
+    border: 1px solid #ccc; /* Border around the search bar */
+    border-radius: 8px; /* Rounded corners */
+    padding: 0 12px; /* Horizontal padding */
+    background-color: #f9f9f9; /* Background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-left: 0; /* Default for mobile screens */
+}
+
+/* Icons styling */
+.icon, .settingsIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px; /* Icon container size */
+    height: 24px;
+}
+
+/* Input field styling */
+.input {
+    flex-grow: 1; /* Input field grows to take available space */
+    border: none; /* Remove border */
+    outline: none; /* Remove focus outline */
+    padding: 0 8px; /* Inner padding */
+    font-size: 14px; /* Font size */
+    background-color: transparent; /* Transparent background */
+    color: #333; /* Text color */
+}
+
+/* Desktop-specific styling */
+@media (min-width: 1024px) {
+    .wrapper {
+        margin-left: 272px; /* Add 272px left space on desktop screens */
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .inputContainer {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}
