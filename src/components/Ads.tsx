@@ -3,56 +3,72 @@ import Image from 'next/image';
 
 const CarAds = () => {
   return (
-    <div className="px-8 py-8">
-      {/* Ads Container */}
-      <div className="flex flex-wrap justify-between gap-4">
-
-        {/* First Car Ad */}
-        <div className="relative bg-[#54A6FF] w-full sm:w-[640px] h-[360px] rounded-lg shadow-lg p-6 flex flex-col items-center justify-center">
-          <div>
-
-            
-          </div>
-          {/* Title */}
-          <h2 className="text-white text-center text-[32px] font-semibold mb-4">
+    <div className="relative h-screen flex items-center justify-center">
+      {/* First Div */}
+      <div className="absolute top-8 sm:top-8 sm:left-8 rounded-lg bg-[#54A6FF] w-full sm:w-[620px] h-[360px] flex justify-center items-center">
+        {/* Ads Div in First Div */}
+        <div className="absolute top-6 left-6 h-[224px] w-[284px] p-6 rounded-lg">
+          <h1 className="font-[Plus Jakarta Sans] text-[24px] leading-[28px] font-bold mb-2 text-white">
             The Best Platform for Car Rental
-          </h2>
-          {/* Description */}
-          <p className="text-white text-center text-[16px] mb-6">
+          </h1>
+          <p className="font-[Plus Jakarta Sans] text-[14px] leading-[15px] mb-6  text-white">
             Ease of doing a car rental safely and reliably. Of course at a low price.
           </p>
-          {/* Button */}
-          <button className="bg-white text-[#54A6FF] font-semibold py-2 px-6 rounded-md w-[120px] h-[44px] flex items-center justify-center hover:bg-[#54A6FF] hover:text-white transition duration-300">
+          <button className="font-[Plus Jakarta Sans] text-[16px] bg-[#3563E9] text-white hover:bg-[#2547A9] w-[140px] h-[44px] rounded-lg">
             Rental Car
           </button>
-        
-          </div>
-        </div>
 
 
+        {/* Image after Button (outside ads div) */}
+        <Image
+          src="/images/image7.jpg"
+          alt="Car Rental"
+          width={296}
+          height={90}
+          className="absolute top-[210] sm:top-[232px] left-[200] sm:left-[170px] sm:w-[406px] sm:h-[110px] "
 
-
-
-
-        {/* Second Car Ad (Hidden on Mobile) */}
-        <div className="relative bg-[#3563E9] w-full sm:w-[640px] h-[360px] rounded-lg shadow-lg p-6 flex flex-col items-center justify-center hidden sm:block">
-          {/* Title */}
-          <h2 className="text-white text-center text-[32px] font-semibold mb-4">
-            Easy way to rent a car at a low price
-          </h2>
-          {/* Description */}
-          <p className="text-white text-center text-[16px] mb-6">
-            Providing cheap car rental services and safe and comfortable facilities.
-          </p>
-          {/* Button */}
-          <button className="bg-white text-[#3563E9] font-semibold py-2 px-6 rounded-md w-[120px] h-[44px] flex items-center justify-center hover:bg-[#3563E9] hover:text-white transition duration-300">
-            Rental Car
-          </button>
+        />
 
         </div>
 
       </div>
 
+
+
+
+
+
+
+      {/* Second Div (hidden on mobile) */}
+      <div className="hidden sm:block absolute top-8 sm:left-[700px] bg-[#3563E9] w-full sm:w-[620px] h-[360px] flex justify-center items-center rounded-lg">
+        {/* Ads Div in Second Div */}
+        <div className="absolute top-6 left-6 h-[224px] w-[284px] p-6 rounded-lg">
+          <h1 className="font-[Plus Jakarta Sans] text-[24px] leading-[28px] font-bold mb-2 text-white">
+            Easy way to rent a car at a low price
+          </h1>
+          <p className="font-[Plus Jakarta Sans] text-[14px] leading-[15px] mb-6  text-white">
+            Providing cheap car rental services and safe and comfortable facilities.
+          </p>
+          <button className="font-[Plus Jakarta Sans] text-[16px] bg-[#54A6FF] text-white hover:bg-[#2547A9] w-[140px] h-[44px] rounded-lg">
+            Rental Car
+          </button>
+
+     {/* Image after Button (outside ads div) */}
+     <Image
+          src="/images/image8.jpg"
+          alt="Car Rental"
+          width={606}
+          height={150}
+          className="absolute top-[232px] left-[227px]"
+        />
+
+
+
+
+        </div>
+
+        </div>
+    </div>
   );
 };
 
