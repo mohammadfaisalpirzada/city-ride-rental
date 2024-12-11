@@ -16,7 +16,7 @@ const NavBar = () => {
         {/* Profile Picture (Mobile Only) */}
         <div className="w-[32px] h-[32px] rounded-full overflow-hidden bg-gray-200 ml-auto md:hidden">
           <Image
-            src="/profile-picture.jpg"
+            src="/profile.jpg"
             alt="Profile Picture"
             width={32}
             height={32}

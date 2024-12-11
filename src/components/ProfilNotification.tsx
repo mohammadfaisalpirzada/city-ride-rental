@@ -7,7 +7,7 @@ const ProfilNotification = () => {
       {/* Heart Icon */}
       <button className="w-[44px] h-[44px] flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
         <Image
-          src="/images/vector.png"
+          src="/vector.png"
           alt="Heart Icon"
           width={20}
           height={20}
@@ -17,7 +17,7 @@ const ProfilNotification = () => {
       {/* Notification Icon */}
       <div className="relative w-[44px] h-[44px] flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
         <Image
-          src="/images/notification.png"
+          src="/notification.png"
           alt="Notification Icon"
           width={20}
           height={20}
@@ -28,7 +28,7 @@ const ProfilNotification = () => {
       {/* Settings Icon */}
       <button className="w-[44px] h-[44px] flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200">
         <Image
-          src="/images/setting-2.png"
+          src="/setting-2.png"
           alt="Settings Icon"
           width={20}
           height={20}
@@ -38,7 +38,7 @@ const ProfilNotification = () => {
       {/* Profile Picture */}
       <div className="w-[44px] h-[44px] rounded-full overflow-hidden bg-gray-200">
         <Image
-          src="/images/profile-picture.jpg"
+          src="/profile.jpg"
           alt="Profile Picture"
           width={44}
           height={44}
