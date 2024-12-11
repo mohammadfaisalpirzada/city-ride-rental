@@ -21,11 +21,11 @@ const CarAds = () => {
 
         {/* Image after Button (outside ads div) */}
         <Image
-          src="/images/image7.jpg"
+          src="/image7.jpg"
           alt="Car Rental"
           width={296}
           height={90}
-          className="absolute top-[210] sm:top-[232px] left-[200] sm:left-[170px] sm:w-[406px] sm:h-[110px] "
+          className="absolute top-[210] sm:top-[232px] left-[200] sm:left-[170px] sm:w-[406px] sm:h-[90px] "
 
         />
 
@@ -55,7 +55,7 @@ const CarAds = () => {
 
      {/* Image after Button (outside ads div) */}
      <Image
-          src="/images/image8.jpg"
+          src="/image8.jpg"
           alt="Car Rental"
           width={606}
           height={150}

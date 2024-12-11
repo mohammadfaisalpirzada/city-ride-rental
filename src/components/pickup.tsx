@@ -116,7 +116,7 @@ const PickupDropOffSection = () => {
       {/* Center Switch Image */}
       <div className="mt-4 sm:mt-0">
         <Image
-          src="/images/Switch.png"
+          src="/Switch.png"
           alt="Switch"
           width={100}
           height={100}
